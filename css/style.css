@@ -1,0 +1,105 @@
+.content{
+  background-color: #f1e5e4;
+}
+body {
+  margin: 0;
+  background-color: #f1e5e4;
+}
+header {
+  background-color: #b84221;
+  padding: 15px;
+}
+header ul {
+  float: right;
+  color: #f1e5e4;
+}
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+header p {
+  display: inline-block;
+}
+.heroImg {
+  padding: 100px 15px;
+}
+.content {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+}
+button {
+  padding: 15px;
+  background-color:#b3cbe1;
+  color: black;
+  font-size: 15px;
+  border-radius: 4px;
+}
+footer {
+  background-color: #373738;
+  padding: 5px;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+.mySkills{
+  margin: auto;
+  width: 70%;
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+  align-items:center;
+  justify-content: center;
+}
+.flexContainer {
+  display:flex;
+  justify-content:space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.myWork{
+  margin: auto;
+  width: 70%;
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+.workGrid{
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+footer{
+  background-color: #b84221;
+  color: #f1e5e4;
+}
+
+h3{
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+.workGrid {
+  display:flex;
+  flex-direction: column;
+}
+.workGrid > div {
+  width: 100%
+}
+.workGrid {
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "project1"
+    "project 2";
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+}
+}
