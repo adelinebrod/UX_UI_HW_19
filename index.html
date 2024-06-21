@@ -3,15 +3,22 @@
   <head>
     <title>Adeline</title>
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <header>
       <img src="images/logo.png" alt="Adeline Rodriguez">
       <ul>
-        <li>ABOUT</li>
-        <li>SKILLS</li>
-        <li>WORK</li>
-        <li>CONTACT</li>
+        <li>Home</li>
+        <li>About</li>
+        <li> Contact</li>
+        <li id= "work"> Projects
+          <ul class="dropdown">
+            <li><a href="#project1">Maco Mobile App</a></li>
+            <li><a href="#project2">Tinklr Mobile App</a></li>
+            <li><a href="#project3">EDD Redesign</a></li>
+          </ul>
+        </li>
       </ul>
     </header>
     <section class="heroImg" style="background-color: #f1e5e4;"></section>
@@ -77,4 +84,14 @@
       </ul>
     </footer>
   </body>
+  <script>
+  $(document).ready(function() {
+   $('#work').hover(function() {
+    $('.dropdown').stop(true, true).slideDown(200);
+   }, function() {
+    $('.dropdown').stop(true, true).slideUp(200);
+   }); 
+  });
+  </script>
+  <script src="js/index.js"></script>
 </html>
